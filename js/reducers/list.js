@@ -52,7 +52,7 @@ export default function (state: State = initialState, action: Action): State {
         item.address.toLowerCase().indexOf(action.text.toLowerCase()) > -1 )
       }
 
-      var calculateDistance = (carpark_lat, carpark_long, user_lat, user_long) => {
+      let calculateDistance = (carpark_lat, carpark_long, user_lat, user_long) => {
         var p = 0.017453292519943295;    // Math.PI / 180
         var c = Math.cos;
         var a = 0.5 - c((user_lat - carpark_lat) * p) / 2 +

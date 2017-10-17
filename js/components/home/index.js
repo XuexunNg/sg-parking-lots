@@ -68,7 +68,7 @@ class Home extends Component {
         
       },
       (error) => {Toast.show({
-        text: 'Unable to obtain your location.',
+        text: 'Unable to obtain your location. Please try again',
         position: 'bottom',
         buttonText: 'Okay',
         duration:5000
